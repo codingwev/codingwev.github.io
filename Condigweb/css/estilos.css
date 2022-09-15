@@ -1,0 +1,641 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Bevan&family=Khand&family=Montserrat:wght@200&family=Poppins:wght@100&family=Sansita+Swashed:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #15c0db;
+}
+
+/*subtitulos*/
+.titulos {
+  display: block;
+  font-family: "Khand";
+  font-size: 60px;
+  color: #15c0db;
+  text-shadow: 6px 6px 5px #2e2e2e31;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/*-------------Primera seccion------------------------------*/
+
+/*Estructura del nav*/
+.nav-grid {
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+
+}
+
+/*Logo del Nav*/
+.logo-nav {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.logo-nav img{
+  margin: 0px 50px;
+  width: 70px;
+}
+
+/*Configuracion del logo si es texto*/
+.logo {
+  background-color: transparent;
+  color: #fbfbfb;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 30px;
+  height: 25px;
+}
+
+/*Opciones del Menu*/
+.grid-lista {
+  background-color: transparent;
+}
+
+.lista {
+  list-style: none;
+  display: inline-block;
+  padding: 30px 0px;
+}
+
+.lista a {
+  font-family: monospace;
+  font-size: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px 20px;
+  margin: 0px 20px;
+}
+
+.lista a:hover {
+  color: #000000;
+  transition: 0.4s;
+}
+
+
+/*configuraciones para el menu resposive*/
+
+#check {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #ffff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/*Animaciones del menu*/
+header.abajo .grid-lista,
+header.abajo .contacto,
+header.abajo .logo-nav {
+  background-color: #fafafa;
+  border-bottom: 0.1px solid #68686860;
+  transition: 0.3s;
+
+}
+
+/*modificaciones de tamaño y color lado del logo*/
+header.abajo .logo-nav .logo {
+  color: #00a0d2;
+  font-size: 25px;
+  transition: 0.4s;
+}
+
+/*modificaciones para el listado del menu*/
+header.abajo .grid-lista li a {
+  font-weight: bolder;
+  color: #00a0d2;
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+header.abajo .grid-lista li a:hover {
+  color: #1d1e1f;
+}
+
+/*SLIDER DEL SITIO*/
+
+.slider {
+  background-color: #15c0db;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Fuente Principal*/
+.slider .title {
+  font-family: "Khand";
+  display: block;
+  color: #fafafa;
+  font-size: 80px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 4px;
+}
+
+.slider .title:after {
+  font-weight: lighter;
+  display: block;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  content: "consulting and services";
+}
+
+/*configuracion de los iconos*/
+.iconos {
+  position: absolute;
+  width: 100%;
+  max-width: 1500px;
+  height: 560px;
+}
+
+.html,
+.node,
+.css,
+.js {
+  position: absolute;
+  width: 150px;
+}
+
+.html {
+  top: 0%;
+}
+
+.css {
+  top: 15%;
+  right: 5%;
+}
+
+.js {
+  top: 75%;
+  left: 5%;
+}
+
+.node {
+  filter: sepia(90%);
+  top: 75%;
+  right: 10%;
+}
+
+/*Seccion Dos servicios*/
+
+.segunda {
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+/*titulo del servicio*/
+.titulo-servicio {
+  text-align: center;
+  margin: 180px 0px 120px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.informacion-servicio {
+  width: 70%;
+  max-width: 1100px;
+  font-family: "khand";
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #1d1e1f;
+  margin: 100px auto;
+  cursor: pointer;
+}
+
+.services-grid {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 0px 0px 0px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/*card de servicios*/
+.uno,
+.dos,
+.tres {
+  margin: 150px 0px 120px 0px;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  border: 0.2px #15c0db solid;
+  cursor: pointer;
+}
+
+.uno {
+  box-shadow: 18px 18px 15px rgba(0, 0, 0, 0.212);
+}
+
+.dos {
+  box-shadow: 0px 18px 15px rgba(0, 0, 0, 0.212);
+}
+
+.tres {
+  box-shadow: 18px 18px 15px rgba(0, 0, 0, 0.212);
+
+}
+
+.img-uno,
+.img-dos,
+.img-tres {
+  width: 45px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.img-uno {
+  left: -20px;
+  top: -20px;
+}
+
+.img-dos {
+
+  left: 40%;
+  top: -35px;
+}
+
+.img-tres {
+
+  width: 55px;
+  left: 90%;
+  top: -20px;
+}
+
+
+
+.titulo-card-uno,
+.titulo-card-dos,
+.titulo-card-tres {
+  width: 80%;
+  margin: 40px auto;
+  font-family: "Khand";
+  letter-spacing: 1px;
+  font-size: 25px;
+  text-align: center;
+  color: #15c0db;
+  text-shadow: 1px 1px 3px #978e8e6e;
+  cursor: pointer;
+}
+
+.titulo-card-uno::before,
+.titulo-card-dos::before,
+.titulo-card-tres::before {
+  font-family: "Montserrat";
+  font-size: 15px;
+  display: block;
+  padding: 15px 0px;
+  color: #1d1e1f;
+}
+
+.titulo-card-uno::before {
+  content: "Trabajo en HTML";
+}
+
+.titulo-card-dos::before {
+  content: "Trabajo en CSS";
+}
+
+.titulo-card-tres::before {
+  content: "Trabajo NODEJS";
+}
+
+.info-card {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 90px;
+  font-family: "Montserrat";
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.service-btn {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #00a0d2;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  padding: 7px;
+}
+
+.service-btn:hover {
+  background-color: #00a1d2;
+  color: #fafafa;
+  border: 1px solid rgba(255, 255, 255, 0);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.473);
+  transition: 0.3s;
+}
+
+/*Parte tres*/
+
+.tercero {
+  background-color: #00a0d2;
+  padding: 110px 250px 110px 0px;
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.info-slider-tercero {
+  background-color: white;
+  box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.212);
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.titulo-tercero {
+  padding: 50px 0px 0px 30px;
+  font-family: "Khand";
+  text-shadow: 4px 3px 1px #2e2e2e31;
+  color: #15c0db;
+  letter-spacing: 0.7px;
+  font-size: 60px;
+  text-align: left;
+  max-width: 80%;
+}
+
+.info-tercero {
+  width: 90%;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 60px 90px 60px 30px;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.tercero img {
+  margin: 0px 0px 20px 0px;
+  width: 370px;
+  max-width: 1000px;
+  position: absolute;
+  top: -10%;
+  right: -30%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.212);
+}
+
+/*parte 4*/
+
+.fondo {
+
+  padding: 200px 100px;
+  background: linear-gradient(to bottom,
+      rgba(48, 48, 48, 0.103) 65%,
+      black 0%,
+      white 50%,
+      white 100%);
+}
+
+.cuarto {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-info {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.titulo-card-cuarto {
+  padding: 70px 0px 70px 0px;
+  font-family: "Khand";
+  text-shadow: 3px 3px 1px #2e2e2e31;
+  color: #15c0db;
+  font-size: 65px;
+  text-align: left;
+}
+
+.info-card4 {
+  padding: 20px 20px 120px 0px;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+}
+
+
+/*five section*/
+.grid-formulario {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 49% 49%;
+
+}
+
+.form1 {
+
+  background-color: #15c0db;
+  width: 70%;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0px auto 100px auto;
+  box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.212);
+}
+
+.titulo-formulario {
+  width: 90%;
+  margin: auto;
+  padding: 25px 0px 20px 0px;
+  font-family: "Khand";
+  text-shadow: 5px 6px 1px #2e2e2e31;
+  color: #ffff;
+  font-size: 40px;
+  text-align: left;
+}
+
+.info-form {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0px 60px 0px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 14px;
+  text-align: justify;
+  color: #fafafa;
+}
+
+
+/*six section*/
+
+.seis {
+  background-color: #00a0d2;
+  position: relative;
+  padding: 110px 0px 120px 0px;
+}
+
+.last-info {
+  background-color: red;
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 170px 0px 170px 0px;
+  background-color: #00a0d2;
+}
+
+.img2 {
+  background-color: white;
+  box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.212);
+  position: absolute;
+  width: 50%;
+  top: 15%;
+  left: 5%;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.base {
+  position: relative;
+  background-color: #fafafa;
+  box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.212);
+  width: 50%;
+  margin: 100px 0px 0px 45%;
+  padding: 50px 0px 50px 0px;
+  border-radius: 10px;
+  opacity: 0.8;
+  z-index: 30;
+}
+
+.titulo-card-seis {
+  padding: 0px 20px;
+  font-family: "Khand";
+  text-shadow: 4px 3px 1px #2e2e2e31;
+  color: #15c0db;
+  font-size: 45px;
+  text-align: center;
+}
+
+/*Pie de pagina*/
+
+.foot {
+  position: relative;
+  width: 100%;
+  margin: 0px 0px;
+
+}
+
+.logo-footer {
+  color: #00a0d2;
+  font-size: 30px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 0px 0px 30px;
+  cursor: pointer;
+}
+
+.derechos {
+  position: absolute;
+  bottom: 2px;
+  padding: 0px 0px 0px 0px;
+  font-size: 13px;
+  color: #434344;
+  font-family: "Montserrat";
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 10px 0px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-red {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 300px;
+  background-color: #f7f8f9;
+}
+
+.title-red {
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.redes1,
+.redes2 {
+  margin-top: 25px;
+  border-left: 0.5px solid #b8b8b8;
+  padding: 0px 0px 0px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.redes1 img,
+.redes2 img {
+  width: 25px;
+}
+
+
+.foot a:visited,
+.foot a:focus,
+.foot a:link,
+.foot a:active,
+.foot {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Khand";
+  font-size: 17px;
+  display: inline-block;
+  position: relative;
+  bottom: 5px;
+  padding: 0px 0px 0px 20px;
+  margin: 0px 0px 0px 0px;
+}
+
+.foot a:hover {
+  color: #00a1d2;
+  transition: all 0.4s ease;
+
+}

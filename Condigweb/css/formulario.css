@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.dev{
+    text-align: center;
+    margin: 20px 0px 5px 0px;
+    font-size: 20px;
+    color: #1f53c5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.comu{
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+    font-size: 30px;
+    color: #24303c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formulario{
+    background-image: url(../img/fondo.jpg);
+    margin: 0px auto 0px auto ;
+    padding: 120px 0px 220px 0px;
+    max-width: 2000px;
+    min-width: 300px;
+}
+
+.form-register {
+    width: 500px;
+    background: #f7f8f3;
+    padding:30px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 25px;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+    text-align: left;
+    color: #333333;
+  }
+
+  .form-register .info{
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #333333;
+  }
+  
+  .controls {
+    width: 100%;
+    background:transparent;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #15C0DB;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #333333;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 40%;
+    background: #15C0DB;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 7px;
+  }
