@@ -1,0 +1,461 @@
+@media only screen and (max-width: 1100px) {
+
+    body {
+        box-sizing: content-box;
+        overflow-x: hidden;
+    }
+
+    /*subtitulos*/
+    .titulos {
+        font-size: 40px;
+        margin: 90px auto;
+
+    }
+
+    .logo-nav img{
+        margin: 5px 10px;
+        width: 60px;
+      }
+      
+
+    .checkbtn {
+         display: block;
+    }
+
+    .nav-grid {
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nav-grid .grid-lista {
+        float: right;
+        margin-right: 0px;
+    }
+
+
+    .grid-lista {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #00A0D2;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: block;
+        margin: -20px 0px;
+        line-height: 30px;
+        padding: 50px 0px 50px 0px;
+    }
+
+    .grid-lista li {
+        display: block;
+        padding: 40px 40px 40px 40px;
+        font-size: 25px;
+    }
+
+
+    #check:checked~.grid-lista {
+        left: 0%;
+    }
+
+    header.abajo .logo-nav .checkbtn {
+        color: #00A0D2;
+        margin: 0px 40px 0px 0px;
+        font-size: 30px;
+    }
+
+    header.abajo .grid-lista li a {
+        font-weight: bolder;
+        color: #00A0D2;
+        font-size: 20px;
+
+    }
+
+    .contacto {
+        display: none;
+    }
+
+    .slider {
+        box-sizing: border-box;
+        background-color: #00A0D2;
+
+    }
+
+    .slider .title {
+        width: 80%;
+        max-width: 80%;
+        margin: auto;
+        font-size: 60px;
+
+    }
+
+    .slider .title:after {
+        font-size: 25px;
+        padding: 50px 0px;
+        font-family: 'Montserrat', sans-serif;
+        content: "consulting and services";
+    }
+
+
+    .iconos {
+
+        display: none;
+
+    }
+
+
+    /*SEGUNDA PARTE SERVICES RESPONSIVE*/
+
+
+    /*base de la segunda seccion*/
+    .segunda {
+        width: 90%;
+        margin: auto;
+    }
+
+    /*titulo del servicio*/
+
+
+    .informacion-servicio {
+        width: 90%;
+        color: #434344;
+        font-size: 17px;
+        text-align: left;
+
+    }
+
+    .services-grid {
+        box-sizing: border-box;
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+
+    }
+
+    /*card de servicios*/
+    .uno,
+    .dos,
+    .tres {
+        box-sizing: border-box;
+        margin: 50px auto 50px;
+        width: 100%;
+    }
+
+
+    .img-uno,
+    .img-dos,
+    .img-tres {
+
+        width: 45px;
+        left: 40%;
+        top: -25px;
+
+    }
+
+    .info-card {
+        margin-bottom: 50px;
+        font-size: 15px;
+        text-align: center;
+        text-align: left;
+    }
+
+    .service-btn {
+        display: none;
+    }
+
+
+
+    /*TERCERA SECCION APARATADO MOBILE*/
+
+    body .tercero {
+
+        background-color: #00a1d2;
+        padding: 0px 0px 0px 0px;
+        position: relative;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .tercero .info-slider-tercero {
+
+        background-color: transparent;
+        box-shadow: 0px 0px 0px transparent;
+        border-radius: 0px;
+        width: 95%;
+        margin: auto;
+        max-width: 100%;
+
+
+    }
+
+    .tercero .titulo-tercero {
+        padding: 100px 0px 0px 0px;
+        font-family: 'Khand';
+        color: #ecf2f3;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .tercero .info-tercero {
+        width: 80%;
+        margin: auto;
+        font-size: 16px;
+        color: #fafafa;
+        text-align: left;
+        padding: 0px 0px 100px 0px;
+        font-family: 'Montserrat';
+        letter-spacing: 1px;
+        font-weight: 600;
+
+    }
+
+    .tercero img {
+
+        display: none;
+
+
+    }
+
+
+
+    /*cuarta parte*/
+
+    .fondo {
+        padding: 5px 0px;
+    }
+
+    body .cuarto {
+        width: 95%;
+        margin: auto;
+    }
+
+    .card-info {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .titulo-card-cuarto {
+        text-align: center;
+        width: 85%;
+        font-size: 40px;
+        padding: 0px 0px;
+    }
+
+    .info-card4 {
+        width: 80%;
+        margin: auto;
+        font-size: 16px;
+        color: #181717;
+        text-align: left;
+        padding: 0px 0px 100px 0px;
+        font-family: 'Montserrat';
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+
+    /*apartado quinta seccion*/
+
+    .grid-formulario {
+        display: block;
+        box-sizing: border-box;
+        width: 80%;
+        max-width: 80%;
+
+
+    }
+
+
+
+    .grid-formulario .form1 {
+        box-sizing: content-box;
+        background-color: #15C0DB;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.212);
+    }
+
+
+    .form1 .titulo-formulario {
+        width: 90%;
+        margin: auto;
+        padding: 35px 0px 35px 0px;
+        font-family: 'Khand';
+        text-shadow: 5px 6px 1px #2e2e2e31;
+        color: #ffff;
+        font-size: 40px;
+
+    }
+
+    .info-form {
+        width: 90%;
+        margin: auto;
+        padding: 0px 0px 100px 0px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 14px;
+        text-align: justify;
+        color: #fafafa;
+    }
+    /*six section*/
+
+    .seis {
+        width: 100%;
+        max-width: 100%;
+        position: static;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .last-info {
+        background-color: rgb(233, 236, 220);
+        position: static;
+        width: 80%;
+        max-width: 80%;
+        margin: 0px auto;
+        padding: 120px 0px 150px 0px;
+        background-color: #00a0d2;
+    }
+
+
+    .base {
+        position: static;
+        box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.212);
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 50px 10px;
+        border-radius: 10px;
+        opacity: 0.8;
+        z-index: 30;
+    }
+
+    .titulo-card-seis {
+        width: 100%;
+        padding: 0px 20px;
+        font-family: "Khand";
+        text-shadow: 1px 1px 1px #2e2e2e31;
+        color: #15c0db;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .img2 {
+        margin: 80px 0px 0px 0px;
+        width: 100%;
+        box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.212);
+        position: static;
+    }
+
+
+    /*apartado mobile cuarta seccion*/
+
+
+    /*Pie de pagina*/
+
+    .foot {
+
+        position: static;
+        width: 100%;
+        background-color: transparent;
+
+    }
+
+    .footer-logo {
+        display: none;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        background-color: transparent;
+        display: block;
+
+    }
+
+    .footer-red {
+        background-color: transparent;
+        display: block;
+        height: auto;
+        padding: 0px 0px 0px 20px;
+
+    }
+
+
+    .logo-footer {
+        display: none;
+        display: block;
+        background-color: transparent;
+        color: #00A0D2;
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0PX 0PX 0PX 0PX;
+
+    }
+
+    .derechos {
+        background-color: transparent;
+        position: relative;
+        padding: 20px 0px 0px 0px;
+        font-size: 15px;
+        color: #080808;
+        font-family: 'khand';
+        text-align: center;
+        border-top: 1px solid #080808;
+    }
+
+
+
+
+    .title-red {
+        background-color: transparent;
+        font-family: 'khand';
+        font-size: 25px;
+        padding: 10px 0px 30px 0px;
+        color: #434344;
+    }
+
+    .redes1 {
+        margin-bottom: -25px;
+    }
+
+    .redes2 {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .redes1 img,
+    .redes2 img {
+
+        width: 20px;
+    }
+
+    .date {
+        background-color: transparent;
+        font-family: 'Khand';
+        font-size: 15px;
+        display: inline-block;
+        padding: 15px 0px 0px 20px;
+        margin: 0px 0px 0px 0px;
+    }
+
+
+
+
+    .formulario {
+        display: none;
+        background-image: url(../img/fondo.jpg);
+        margin: 0px auto 0px auto;
+        padding: 10px 0px 10px 0px;
+        width: 200px;
+    }
+
+    .form-register {
+        width: 200px;
+
+    }
+
+
+
+
+}
